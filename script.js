@@ -65,9 +65,16 @@ class Calculator {
                 break;
             case "÷":
                 computation = prev / current;
+                if (computation === Infinity) {
+                    computation = undefined;
+                }
                 break;
             default:
                 return;
+        }
+        if (isNaN(computation)) {
+            computation = "";
+            return;
         }
         this.currentOperand = computation;
         this.operation = undefined;
