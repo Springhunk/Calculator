@@ -67,6 +67,8 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     flex-direction: column;
+    text-align: right;
+    overflow: hidden;
     word-wrap: break-word;
     word-break: break-all;
 }
